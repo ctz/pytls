@@ -286,4 +286,4 @@ if __name__ == '__main__':
 
     print(DemoEnum.tostring(DemoEnum.read(io.BytesIO(b'\x02'))))
     print(DemoEnum.table())
-    print(Encode.item_vec(Encode.u8, DemoEnum.encode, [1, 2, 3, 5]))
+    print(Encode.item_vec(Encode.u16, DemoEnum.encode, [1, 2, 3, 5]))
